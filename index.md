@@ -31,6 +31,22 @@ On the other side, we have a parallel corpus that consists on **political and ec
 
 “Attention is All you Need” [1], without a doubt, is one of the most impactful and interesting paper in 2017. It made possible to do seq2seq modelling without recurrent network units. The proposed “transformer” model is entirely built on the self-attention mechanisms without using sequence-aligned recurrent architecture. The secret recipe is carried in its model architecture. Before digging into it … Why?
 
+RNNs presented several challenges …
+
++ Tough work with long range dependencies though it was solved using attention mechanisms.
++ Gradient vanishing and explosion.
++ Large number of training steps (unrolled RNNs become very deep models, since we have to unroll so many times as steps). RNNs are always more costly to train than convolutional networks and other types of simpler networks.
++ Recurrence prevents parallel computation! Because weights are tied, and optimization is difficult.
+
+Transformer networks facilitate long range dependencies; secondly, there is no gradient vanishing nor explosion; it has fewer training steps and most important: **it has no recurrence!** A fact which facilitates parallel computation. The Multi-Head Attention block is the important block where all the good stuff happens … Multi-Head Attention takes every word, combines it with some of the other words through the Attention Mechanisms to produce a better embedding that merges together information from pairs of words. If we stack those blocks then we will be looking at pairs of pairs (and pairs of pairs of pairs, and we can continue so forth), essentially we will combining not just pairs of words, but groups of words, that get larger and larger. Finally, we will obtain completely new representations of words which capture contextual meaning.
+
+Another impressive feature of the Transformers, apart from computational performance and higher accuracy, is that we can visualize the “attention”, so that we can gain insight of how information travels through the network while processing or translating a given word. Let’s see that in an example: 
+
++ The animal didn’t cross the street because **it** was too tired.
++ The animal didn’t cross the street because **it** was too wide.
+
+What does the pronoun “it” refer to, in both phrases? This problem is called “coreference resolution”. Visualizing the “attention” in a well-trained Transformer network, we would see that in the first sentence the attention value for “animal” is high when translation “it”, whereas in the second phrase the word “street” would have a higher value. This information is of great value when doing Machine Translation.
+
 
 # 1.4 Gender Specific Translations
 
