@@ -101,4 +101,15 @@ The used technique to identify this unfairness works by testing the model prefer
 
 [3] [Equalizing Gender Bias in Neural Machine Translation with Word Embeddings Techniques](https://arxiv.org/pdf/1901.03116.pdf)
 
-# 1.6 Reducing Gener Bias
+  
+  
+# 1.6 Reducing Gender Bias
+Nowadays the top translators available to the public (such as Google Translate) are based on deep learning models. These models are mostly trained from millions of translated text examples, which implies that they learn from translations that us humans have made of all kinds of documents. The direct consequence of this is that **the model inherits the bias** present on the underlying corpora.
+
+In the case of Google Translate, its model learns from already translated texts in the web.  We can undoubtedly assume that texts in the web will have, among others, a strong gender bias, which is carried onto the web from its pre-existing state in society. Consequently, if a specific method to correct this inherent bias is not applied, this will be present in the translations made by the model.
+
+This problem is enhanced by the fact that **there exist significant differences in gender expression between languages**. One of the clearest cases of this is the gender-neutral common nouns in English: when translated to languages that actually have gender-binary nouns (such as Spanish or Turkish), Google Translate would inadvertently select one of the two genders. For example: it would skew masculine for words like “strong” or “doctor,” and feminine for other words, like “nurse” or “beautiful.”
+
+In order to tackle this problem Google Translate included gender-specific translations in 2018 for some languages (such as Turkish), and now returns the two possibilities, one corresponding to each binary gender. For instance, if you [type]([https://translate.google.com/#view=home&op=translate&sl=tr&tl=en&text=o%20bir%20doktor](https://translate.google.com/#view=home&op=translate&sl=tr&tl=en&text=o bir doktor)) “o bir doktor” in Turkish, you’ll now get “she is a doctor” and “he is a doctor” as the gender-specific translations.
+
+With the recent appearance of non-binary genders, it is clear that deep learning based translators will have to adapt their models if they want to adapt to them - and neglect the clear gender bias in most of today's content, where the existance of non-binary genders is, overwhelmingly, not even considered.
