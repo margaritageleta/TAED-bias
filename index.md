@@ -34,6 +34,25 @@ On the other side, we have a parallel corpus that consists on **political and ec
 
 # 1.4 Gender Specific Translations
 
+Most modern translators use end-to-end neural network-based systems to perform translations, which greatly improved the quality of them when they were introduced. Google Translator, probably the most infamous one, also transitioned into this type of system. In this entry, we will focus on how Google is working in order to reduce gender bias in their translation service.[2]
+
+Languages differ a lot in how they represent gender. These differences can cause trouble for translation systems and, when ambiguity arises (i.e. going from a gender-neutral language to a language where gender is explicitly encoded), systems tend to pick gender choices which reflect some of socities' assymetries. This problem lies more in the training data than in the models themselves, as biases are implicitly encoded in it.
+
+About two years ago, Google Translate started tackling this problem by returning all the possible gender possibilities given a possible ambiguous query for certain languages. As an example, the Turkish sentence _o bir hemşire_ (_he/she is a nurse_) was historically translated to English as _he is a nurse_ by Google Translator. Their current system, instead, returns two possible translations: _he is a nurse_ and _she is a nurse_.
+
+To support these gender-specific translations of single words, an enrichment of the available data had to be done in order to add gender attributes was enough. However, for longer queries it was obviously more challenging and it required major changes to the whole architecture. To overcome so, Google's team focused on Turkish to English translation and came up with a three-step plan.
+
+The first step was detecting Gender-Neutral queries. Despite many Turkish sentences being gender-neutral, not all sentences are. Therefore, the detection of those eligible to gender-specific translations was crucial. Moreover, sometimes this neutralness is explicitly encoded, but sometimes it is done implicitly, so a simple mapper of pronouns was not enough. Furthermore, if a machine learning system was to be used, it had to be simple enough not to introduce a high latency and complex enough to have an accurate performance. A convolutional neural network was finally built to solve this task.
+
+The next logical step was to generate the gender-specific translations. They did so by enhancing their NMT system to produce both feminine and masculine translations when needed. They could achieve so by dividing their parallel training data into feminine, masculine and genderless words, then adding a special input token for the desired translation (i.e. _<2MALE>_, _<2FEMALE>_) and finally training the NMT system with the 3 different datasets.
+
+Finally, they performed an assessment of the quality of the translations. To do so, given a gender-neutral query, the NMT is requested thrice: one for a masculine translation, one for a femenine translation and one for a default translation (no gender token is added to the input). Finally, these outputs are compared. In the case of the gender-specific translations changing more than the necessary between them, the default one is given to the user. As an example, if the model returned _Did he really say those words?_ and _Did she actually say those words?_ as the gender-specific translations, they would not be shown as the word _really_ is swapped by _actually_, and the default translation would be returned instead.
+
+This is only the first step in fighting gender bias in translation systems, and Google's plan is to extend these gender-specific translations to several languages and also include non-binary gender in translations.
+
+
+
+
 # 1.5 Gender in, Gender out
 
 Natural Language models, such as Machine Translation (MT), are trained on large text corpora which contain biases and stereotypes. Thus, neural models might learn and amplify these unfairnesses.
@@ -62,6 +81,8 @@ The used technique to identify this unfairness works by testing the model prefer
 
 [1] [Attention is All you Need (Vasvani, et al., 2017)](https://arxiv.org/pdf/1706.03762.pdf)
 
-[2] [Equalizing Gender Bias in Neural Machine Translation with Word Embeddings Techniques](https://arxiv.org/pdf/1901.03116.pdf)
+[2] [Providing Gender-Specific Translations in Google Translate](https://ai.googleblog.com/2018/12/providing-gender-specific-translations.html)
+
+[3] [Equalizing Gender Bias in Neural Machine Translation with Word Embeddings Techniques](https://arxiv.org/pdf/1901.03116.pdf)
 
 # 1.6 Reducing Gener Bias
