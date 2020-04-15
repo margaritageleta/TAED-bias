@@ -34,11 +34,11 @@ On the other side, we have a parallel corpus that consists on **political and ec
 
 # 1.4 Gender Specific Translations
 
-Most modern translators use end-to-end neural network-based systems to perform translations, which greatly improved the quality of them when they were introduced. Google Translator, probably the most infamous one, also transitioned into this type of system. In this entry, we will focus on how Google is working in order to reduce gender bias in their translation service.[2]
+Most modern translators use end-to-end neural network-based systems to perform translations, which greatly improved the quality of them when they were introduced. Google Translate, probably the most infamous one, also transitioned into this type of system. In this entry, we will focus on how Google is working in order to reduce gender bias in their translation service.[2]
 
 Languages differ a lot in how they represent gender. These differences can cause trouble for translation systems and, when ambiguity arises (i.e. going from a gender-neutral language to a language where gender is explicitly encoded), systems tend to pick gender choices which reflect some of socities' assymetries. This problem lies more in the training data than in the models themselves, as biases are implicitly encoded in it.
 
-About two years ago, Google Translate started tackling this problem by returning all the possible gender possibilities given a possible ambiguous query for certain languages. As an example, the Turkish sentence _o bir hemşire_ (_he/she is a nurse_) was historically translated to English as _he is a nurse_ by Google Translator. Their current system, instead, returns two possible translations: _he is a nurse_ and _she is a nurse_.
+About two years ago, Google Translate started tackling this problem by returning all the possible gender possibilities given a possible ambiguous query for certain languages. As an example, the Turkish sentence _o bir hemşire_ (_he/she is a nurse_) was historically translated to English as _he is a nurse_ by Google Translate. Their current system, instead, returns two possible translations: _he is a nurse_ and _she is a nurse_.
 
 To support these gender-specific translations of single words, an enrichment of the available data had to be done in order to add gender attributes was enough. However, for longer queries it was obviously more challenging and it required major changes to the whole architecture. To overcome so, Google's team focused on Turkish to English translation and came up with a three-step plan.
 
