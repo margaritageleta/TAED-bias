@@ -2,7 +2,7 @@
 
 
 # 1.1 Parallel Corpora
-```markdown
+
 The purpose of this entry is to summarize any information regarding the datasets from [Europarl v10](http://www.statmt.org/europarl/v10/training/)   and [News Commentary v15](http://data.statmt.org/news-commentary/v15/training/) that will be used that may be of interest for the users.
 
 ## Background
@@ -22,7 +22,7 @@ For the news on the **proceedings of the European Parliament** the .tsv file con
 To sum up on this one, some stats; this dataset is compound of a little over **2M of sentences** containing over **50M of english words**.
 
 On the other side, we have a parallel corpus that consists on **political and economic news commentaries** originated from the web site [Project Syndicate](https://www.project-syndicate.org). The file is available in different formats and accompanied by different kinds of annotations. In addition, one may also find some other useful files such as pre-compiled word alignments, phrase tables, bilingual dictionaries or frequency counts through the [OPUS website](http://opus.nlpl.eu/index.php). This corpus is formed by **+209k sentences** and over **10M words**.
-```
+
 
 
 # 1.2 NN for MT
