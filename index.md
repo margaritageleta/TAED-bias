@@ -25,7 +25,10 @@ On the other side, we have a parallel corpus that consists on **political and ec
 
 
 
-# 1.2 NN for MT
+# 1.2 Neural Network for Machine Translation
+
+Initially, RNN systems and phrase-based models were used to solve the translation problem. But later, neural machine translation models began to be used and, unlike phrase-based models, they considere the entire input phrase as a single unit.
+Over time, this neural machine translation model was improved to GNMT which, although may make significant mistakes that a human translator would never have committed, can be considered and used as a production system.
 
 # 1.3 Machine Translation via Transformers
 
@@ -40,7 +43,7 @@ RNNs presented several challenges …
 
 Transformer networks facilitate long range dependencies; secondly, there is no gradient vanishing nor explosion; it has fewer training steps and most important: **it has no recurrence!** A fact which facilitates parallel computation. The Multi-Head Attention block is the important block where all the good stuff happens … Multi-Head Attention takes every word, combines it with some of the other words through the Attention Mechanisms to produce a better embedding that merges together information from pairs of words. If we stack those blocks then we will be looking at pairs of pairs (and pairs of pairs of pairs, and we can continue so forth), essentially we will combining not just pairs of words, but groups of words, that get larger and larger. Finally, we will obtain completely new representations of words which capture contextual meaning.
 
-Another impressive feature of the Transformers, apart from computational performance and higher accuracy, is that we can visualize the “attention”, so that we can gain insight of how information travels through the network while processing or translating a given word. Let’s see that in an example: 
+Another impressive feature of the Transformers, apart from computational performance and higher accuracy, is that we can visualize the “attention”, so that we can gain insight of how information travels through the network while processing or translating a given word. Let’s see that in an example:
 
 + The animal didn’t cross the street because **it** was too tired.
 + The animal didn’t cross the street because **it** was too wide.
@@ -101,8 +104,8 @@ The used technique to identify this unfairness works by testing the model prefer
 
 [3] [Equalizing Gender Bias in Neural Machine Translation with Word Embeddings Techniques](https://arxiv.org/pdf/1901.03116.pdf)
 
-  
-  
+
+
 # 1.6 Reducing Gender Bias
 Nowadays the top translators available to the public (such as Google Translate) are based on deep learning models. These models are mostly trained from millions of translated text examples, which implies that they learn from translations that us humans have made of all kinds of documents. The direct consequence of this is that **the model inherits the bias** present on the underlying corpora.
 
