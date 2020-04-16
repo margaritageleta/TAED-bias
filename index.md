@@ -123,5 +123,3 @@ With the recent appearance of non-binary genders, it is clear that deep learning
 [3] [Equalizing Gender Bias in Neural Machine Translation with Word Embeddings Techniques](https://arxiv.org/pdf/1901.03116.pdf)
 
 
-
-# 
