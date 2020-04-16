@@ -30,6 +30,8 @@ On the other side, we have a parallel corpus that consists on **political and ec
 Initially, RNN systems and phrase-based models were used to solve the translation problem. But later, neural machine translation models began to be used and, unlike phrase-based models, they considere the entire input phrase as a single unit.
 Over time, this neural machine translation model was improved to GNMT which, although may make significant mistakes that a human translator would never have committed, can be considered and used as a production system.
 
+
+
 # 1.3 Machine Translation via Transformers
 
 “Attention is All you Need” [1], without a doubt, is one of the most impactful and interesting paper in 2017. It made possible to do seq2seq modelling without recurrent network units. The proposed “transformer” model is entirely built on the self-attention mechanisms without using sequence-aligned recurrent architecture. The secret recipe is carried in its model architecture. Before digging into it … Why?
@@ -49,6 +51,8 @@ Another impressive feature of the Transformers, apart from computational perform
 + The animal didn’t cross the street because **it** was too wide.
 
 What does the pronoun “it” refer to, in both phrases? This problem is called “coreference resolution”. Visualizing the “attention” in a well-trained Transformer network, we would see that in the first sentence the attention value for “animal” is high when translation “it”, whereas in the second phrase the word “street” would have a higher value. This information is of great value when doing Machine Translation.
+
+
 
 
 # 1.4 Gender Specific Translations
@@ -76,16 +80,16 @@ This is only the first step in fighting gender bias in translation systems, and 
 
 Natural Language models, such as Machine Translation (MT), are trained on large text corpora which contain biases and stereotypes. Thus, neural models might learn and amplify these unfairnesses.
 
-We notice an analogy to the well known garbage in, garbage out (GIGO) in NLP tasks which is gender in, gender out. An example of this gender bias is that models are biased towards corpus, hence, they incorporate assumptions such as man is to doctor as woman is to nurse.
+We notice an analogy to the well known garbage in, garbage out (GIGO) in NLP tasks which is **gender in, gender out**. An example of this gender bias is that models are biased towards corpus, hence, they incorporate assumptions such as man is to doctor as woman is to nurse.
 
-It has been shown [2] that even the state-of-the-art models for NLP tasks like the Transformer models, which use word embeddings for language treatment, outperform humans and achieve great results but they’re incapable of solving these mentioned gender issues. This can be seen as they assign and relate certain occupations to a specific gender, **even if the subject of the sentence was correctly identified as the opposite gender**.
+It has been shown [3] that even the state-of-the-art models for NLP tasks like the Transformer models, which use word embeddings for language treatment, outperform humans and achieve great results but they’re incapable of solving these mentioned gender issues. This can be seen as they assign and relate certain occupations to a specific gender, **even if the subject of the sentence was correctly identified as the opposite gender**.
 
 Neutral language processing must be implicit in any NLP applications. It is widely known that word embeddings are used in most of the neural language models. Thus, one key step is to equalize these word embeddings. Several approaches have been already proposed:
 
 + [Hard-debiased embeddings](https://arxiv.org/abs/1607.06520)
 + [GN-GloVe](https://arxiv.org/pdf/1809.01496.pdf)
 
-Although there are some applied debiasing techniques in NLP applications, studies of debiasing MT are quite limited. One recent paper [2] suggests that fair word embeddings could be used in MT to build more neutral models that focus on solving these issues and still achieve the same great results for non-biased cases.
+Although there are some applied debiasing techniques in NLP applications, studies of debiasing MT are quite limited. One recent paper [3] suggests that fair word embeddings could be used in MT to build more neutral models that focus on solving these issues and still achieve the same great results for non-biased cases.
 
 The used technique to identify this unfairness works by testing the model preferences to match an occupation with a specific gender. This testing showed that pre-trained embeddings with debiased techniques achieve best results. In the following, we present an example taken from the paper, which shows that with the correct implementation and debiased pre-trained embeddings, both the subject and the occupation can be correctly translated:
 
@@ -93,6 +97,20 @@ The used technique to identify this unfairness works by testing the model prefer
 | ------------------ | ------------------------------------------ | ------------------------------------------------------------ |
 | GloVe (Enc+Dec)    | **La** conozco desde hace mucho tiempo,... | mi **amiga** trabaja como un **operator** de coches.         |
 | GN-GloVe (Enc+Dec) | **La** conozco desde hace mucho tiempo,... | mi **amiga** trabaja como **operadora** de transporte de minas. |
+
+
+
+# 1.6 Reducing Gender Bias
+
+Nowadays the top translators available to the public (such as Google Translate) are based on deep learning models. These models are mostly trained from millions of translated text examples, which implies that they learn from translations that us humans have made of all kinds of documents. The direct consequence of this is that **the model inherits the bias** present on the underlying corpora.
+
+In the case of Google Translate, its model learns from already translated texts in the web.  We can undoubtedly assume that texts in the web will have, among others, a strong gender bias, which is carried onto the web from its pre-existing state in society. Consequently, if a specific method to correct this inherent bias is not applied, this will be present in the translations made by the model.
+
+This problem is enhanced by the fact that **there exist significant differences in gender expression between languages**. One of the clearest cases of this is the gender-neutral common nouns in English: when translated to languages that actually have gender-binary nouns (such as Spanish or Turkish), Google Translate would inadvertently select one of the two genders. For example: it would skew masculine for words like “strong” or “doctor,” and feminine for other words, like “nurse” or “beautiful.”
+
+In order to tackle this problem Google Translate included gender-specific translations in 2018 for some languages (such as Turkish), and now returns the two possibilities, one corresponding to each binary gender. For instance, if you [type](https://translate.google.com/#view=home&op=translate&sl=tr&tl=en&text=o%20bir%20doktor) “o bir doktor” in Turkish, you’ll now get “she is a doctor” and “he is a doctor” as the gender-specific translations.
+
+With the recent appearance of non-binary genders, it is clear that deep learning based translators will have to adapt their models if they want to adapt to them - and neglect the clear gender bias in most of today's content, where the existance of non-binary genders is, overwhelmingly, not even considered.
 
 
 
@@ -106,13 +124,4 @@ The used technique to identify this unfairness works by testing the model prefer
 
 
 
-# 1.6 Reducing Gender Bias
-Nowadays the top translators available to the public (such as Google Translate) are based on deep learning models. These models are mostly trained from millions of translated text examples, which implies that they learn from translations that us humans have made of all kinds of documents. The direct consequence of this is that **the model inherits the bias** present on the underlying corpora.
-
-In the case of Google Translate, its model learns from already translated texts in the web.  We can undoubtedly assume that texts in the web will have, among others, a strong gender bias, which is carried onto the web from its pre-existing state in society. Consequently, if a specific method to correct this inherent bias is not applied, this will be present in the translations made by the model.
-
-This problem is enhanced by the fact that **there exist significant differences in gender expression between languages**. One of the clearest cases of this is the gender-neutral common nouns in English: when translated to languages that actually have gender-binary nouns (such as Spanish or Turkish), Google Translate would inadvertently select one of the two genders. For example: it would skew masculine for words like “strong” or “doctor,” and feminine for other words, like “nurse” or “beautiful.”
-
-In order to tackle this problem Google Translate included gender-specific translations in 2018 for some languages (such as Turkish), and now returns the two possibilities, one corresponding to each binary gender. For instance, if you [type](https://translate.google.com/#view=home&op=translate&sl=tr&tl=en&text=o%20bir%20doktor) “o bir doktor” in Turkish, you’ll now get “she is a doctor” and “he is a doctor” as the gender-specific translations.
-
-With the recent appearance of non-binary genders, it is clear that deep learning based translators will have to adapt their models if they want to adapt to them - and neglect the clear gender bias in most of today's content, where the existance of non-binary genders is, overwhelmingly, not even considered.
+# 
