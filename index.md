@@ -27,8 +27,14 @@ On the other side, we have a parallel corpus that consists on **political and ec
 
 # 1.2 Neural Network for Machine Translation
 
-Initially, RNN systems and phrase-based models were used to solve the translation problem. But later, neural machine translation models began to be used and, unlike phrase-based models, they considere the entire input phrase as a single unit.
-Over time, this neural machine translation model was improved to GNMT which, although may make significant mistakes that a human translator would never have committed, can be considered and used as a production system.
+A few years ago we started using Recurrent Neural Network(RNN) and Phrase-Based Machine translation. The first one, was used to directly learn the mapping between an input sequence to an output sequence and, the other one, was used to translate sentences, breaking the input sequence into words and treating them independently.
+
+When Neural machine translation (NMT) first came out, NMT showed equivalent accuracy with existing Phrase-Based translation systems and moreover, as opposed to Phrase-Based machine translation, NMT consider the entire input phrase as a single unit, and this, requires fewer engineering design choices. Over time, this Neural Machine Translation model was improved with many techniques like external alignment model, using attention, breaking words into smaller units... Despite these improvements, it wasn't until the Google Neural Machine Translation (GNMT) that we came up with a model that could be considered as a production system.
+
+GNMT implementation is based on an input that the encoder represents as a list of vectors and a decoder that generates the output of the words, one by one,  using a weighted distribution over the encoded input vector of the most relevant words at each step (Attention).
+
+Today, using human-rated side-by-side comparison as a metric, we can consider  GNMT to produce much better translations than previous Phrase-Based translation machine. Although it may make significant mistakes that a human translator would never have committed. That is why we can't say that the machine translation problem has been solved yet.  There is still a lot of work we can do to serve our users better.
+
 
 
 
