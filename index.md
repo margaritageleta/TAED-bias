@@ -5,7 +5,7 @@ Here is a list of all our posts available at the moment:
   {% for post in site.posts %}
     <li>
       <a href="/github-pages-with-jekyll{{ post.url }}">{{ post.title }}</a>
-      <a href="/github-pages-with-jekyll{{ post.url }}">{{ post.description }}</a>
+      <a post.description </a>
 </li>
   {% endfor %}
 </ul>
