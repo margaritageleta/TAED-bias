@@ -1,4 +1,6 @@
-# PHASE #1: Machine Translation
+layout: page
+title: "PHASE #1: Machine Translation"
+permalink: /phase1/
 
 
 # 1.1 Parallel Corpora
@@ -84,7 +86,7 @@ This is only the first step in fighting gender bias in translation systems, and 
 
 Natural Language models, such as Machine Translation (MT), are trained on large text corpora which contain biases and stereotypes.  These models are mostly trained from millions of translated text examples, which implies that they learn from translations that us humans have made of all kinds of documents. The direct consequence of this is that **the model inherits the bias** present on the underlying corpora. Thus, neural models might learn and amplify these unfairnesses.
 
-We notice an analogy to the well known garbage in, garbage out (GIGO) in Natural Language Processing (NLP) tasks which is **gender in, gender out**. An example of this gender bias is that models are biased towards corpus, hence, they incorporate assumptions such as man is to doctor as woman is to nurse.  
+We notice an analogy to the well known garbage in, garbage out (GIGO) in Natural Language Processing (NLP) tasks which is **gender in, gender out**. An example of this gender bias is that models are biased towards corpus, hence, they incorporate assumptions such as man is to doctor as woman is to nurse.
 
 We can undoubtedly assume that texts in the web will have, among others, a strong gender bias, which is carried onto the web from its pre-existing state in society. Consequently, if a specific method to correct this inherent bias is not applied, this will be present in the translations made by the model.
 
