@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "PHASE #1: Machine Translation"
-permalink: /phase1/
+permalink: /phase11/
 ---
 
 # 1.1 Parallel Corpora
