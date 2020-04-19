@@ -117,6 +117,8 @@ With the recent appearance of non-binary genders, it is clear that deep learning
 
 # 2 Re-designing Datasheet for Datasets for when no corpus has been created
 
+To be written!
+
 
 # 3 Modifying Datasheet for Datasets for data used in Machine Translation
 
