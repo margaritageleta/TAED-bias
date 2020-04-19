@@ -114,8 +114,6 @@ Tech companies and Research centers are making a big effort to deal with this is
 
 With the recent appearance of non-binary genders, it is clear that deep learning based translators will have to adapt their models if they want to adapt to them - and neglect the clear gender bias in most of today's content, where the existance of non-binary genders is, overwhelmingly, not even considered.
 
-With the recent appearance of non-binary genders, it is clear that deep learning based translators will have to adapt their models if they want to adapt to them - and neglect the clear gender bias in most of today's content, where the existance of non-binary genders is, overwhelmingly, not even considered.
-
 ### References
 
 [1] [Attention is All you Need (Vasvani, et al., 2017)](https://arxiv.org/pdf/1706.03762.pdf)
