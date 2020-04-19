@@ -6,7 +6,7 @@ Here is a list of all our posts available at the moment:
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="/{{ post.permalink }}">{{ post.title }}</a><br/>
+      <a href="/{{ post.url }}">{{ post.title }}</a><br/>
       {{ post.description }}
 </li>
   {% endfor %}
