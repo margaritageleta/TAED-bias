@@ -80,8 +80,6 @@ Finally, they performed an **assessment of the quality** of the translations. To
 This is only the first step in fighting gender bias in translation systems, and Google's plan is to extend these gender-specific translations to several languages and also include non-binary gender in translations.
 
 
-
-
 # 1.5 Gender in, Gender out
 
 Natural Language models, such as Machine Translation (MT), are trained on large text corpora which contain biases and stereotypes.  These models are mostly trained from millions of translated text examples, which implies that they learn from translations that us humans have made of all kinds of documents. The direct consequence of this is that **the model inherits the bias** present on the underlying corpora. Thus, neural models might learn and amplify these unfairnesses.
@@ -114,7 +112,6 @@ Tech companies and Research centers are making a big effort to deal with this is
 
 With the recent appearance of non-binary genders, it is clear that deep learning based translators will have to adapt their models if they want to adapt to them - and neglect the clear gender bias in most of today's content, where the existance of non-binary genders is, overwhelmingly, not even considered.
 
-<<<<<<< HEAD
 # *PHASE #2: Characterization and documentation of translation datasets*
 
 
@@ -165,8 +162,6 @@ It is well known that all languages evolve over time. Recent sources of plain te
 - **Is vocabulary enrichment automatically developed?**
 
 
-=======
->>>>>>> 3754651e2f1f996056ccafc6984ee943da7b0d02
 ### References
 
 [1] [Attention is All you Need (Vasvani, et al., 2017)](https://arxiv.org/pdf/1706.03762.pdf)
