@@ -1,4 +1,6 @@
-# Welcome to our blog!
+---
+title: "Welcome to our blog!"
+---
 
 Here is a list of all our posts available at the moment:
 <ul>
