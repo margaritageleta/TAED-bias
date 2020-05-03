@@ -8,6 +8,7 @@ Here is a list of all our posts available at the moment:
     <li>
       <a href="{{margaritageleta.github.io}}{{site.baseurl}}{{post.permalink}}">{{post.title}}</a><br/>
       {{ post.description }}
-</li>
+  </li>
+  <img src="{{post.image}}" style="height=100px; width=auto;">
   {% endfor %}
 </ul>
