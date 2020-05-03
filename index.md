@@ -9,6 +9,8 @@ Here is a list of all our posts available at the moment:
       <a href="{{margaritageleta.github.io}}{{site.baseurl}}{{post.permalink}}">{{post.title}}</a><br/>
       {{ post.description }}
   </li>
-  <img src="{{post.image}}" style="height=100px; width=auto;">
+  <div style="width: 100%; height:50px; display:flex; justify-content: center; align-items: center;">  
+    <div style="background-image: url('{{post.image}}'); height:100%; width:50%;"></div>
+  </div>
   {% endfor %}
 </ul>
