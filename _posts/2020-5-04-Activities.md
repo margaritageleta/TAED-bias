@@ -7,7 +7,7 @@ image: img/activi1.jpg
 ---
 
 ### Activity 1: DEBATE algorithmic bias examples
-4 interesting and contradictory situations about bias in the algorithms will be discussed. A link to Mural will be provided.
+4 interesting and contradictory situations about bias in the algorithms will be discussed. Follow this [link](https://app.mural.co/t/biascommunity5219/m/biascommunity5219/1588433438781/ba8b369bccc9c0b9250d00c34af732c5dc931618) to access the Mural!
 
 ### Activity 2: DEBATE on some of the Datasheet Questions
 An activity consisting of 2 parts. It will be in the same Mural as activity 1. 
