@@ -1,10 +1,24 @@
 ---
 layout: post
 title: "Conclusions"
-description: "In this section the conclusions we extracted from the activities we had organized in the Algorithmic Research Session. "
+description: "In this section we explain the conclusions we extracted from the activities we had organized in the Algorithmic Research Session. "
 permalink: /phase5/
 image: null
 ---
+
+### Quiz:
+
+<div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
+      <div style="background-image: url('../img/conclusions/1.png'); height:100%; width:80%; background-repeat: no-repeat; background-size: cover;"></div>
+</div>
+
+<div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
+      <div style="background-image: url('../img/conclusions/2.png'); height:100%; width:80%; background-repeat: no-repeat; background-size: cover;"></div>
+</div>
+
+<div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
+      <div style="background-image: url('../img/conclusions/3.png'); height:100%; width:80%; background-repeat: no-repeat; background-size: cover;"></div>
+</div>
 
 ### Activity 1: DEBATE algorithmic bias examples
 4 interesting and contradictory situations about bias in the algorithms will be discussed. Follow this [link](https://app.mural.co/t/biascommunity5219/m/biascommunity5219/1588433438781/ba8b369bccc9c0b9250d00c34af732c5dc931618) to access the Mural!
@@ -16,10 +30,10 @@ An activity consisting of 2 parts. It will be in the same Mural as activity 1.
 Just 2 questions to assure the viability of data on MT applications.
 Here are the links, choose the one corresponding to your group:
 
-- [Sostenibilitat](https://docs.google.com/forms/d/e/1FAIpQLScmYhv4g7cxxnFKGJ2I_Yvh3IVKEAuEKwY90y9Z8O4mSbs6kA/viewform?usp=sf_link)
-- [RSC](https://docs.google.com/forms/d/e/1FAIpQLSdx7sfjNbbdOTwKX9JJvdy_ArTQK0VsX7fk_zjtdWpk65sNRA/viewform?usp=sf_link)
-- [AI](https://docs.google.com/forms/d/e/1FAIpQLSdk7DFYOvW9zC0PcKEDpI8kkvS8Rib-A7OUnwrBwhSb4p1ckQ/viewform?usp=sf_link)
-- [Privacitat](https://docs.google.com/forms/d/e/1FAIpQLSf3zr68XF2hQgWbtCTEt94A7D6A-JlnR2ar5HkawS2le7F_uA/viewform?usp=sf_link)
+<div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
+      <div style="background-image: url('../img/conclusions/4.png'); height:100%; width:80%; background-repeat: no-repeat; background-size: cover;"></div>
+</div>
+
 
 <div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
     <a href="https://margaritageleta.github.io/TAED-bias/">
