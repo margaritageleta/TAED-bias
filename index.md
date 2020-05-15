@@ -1,7 +1,7 @@
 ---
 title: "Welcome to our blog!"
 ---
-We are happy to announce that we have finally published an Open Repository for Machine Translation DataSheets![**Check it out!**](https://mtdatasheets.cs.upc.edu)
+We are happy to announce that we have finally published an Open Repository for Machine Translation DataSheets! **[Check it out!](https://mtdatasheets.cs.upc.edu)**
 
 Here is a list of all our posts available at the moment:
 <ul>
