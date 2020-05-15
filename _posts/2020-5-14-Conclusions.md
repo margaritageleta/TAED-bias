@@ -8,13 +8,19 @@ image: null
 
 ### Quiz:
 
+We have asked students to translate some words into Catalan/Spanish from English in order to see what gender pronoun they use in the translation, this way we can detect gender biases:
+
 <div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
       <div style="background-image: url('../img/conclusions/1.png'); height:100%; width:80%; background-repeat: no-repeat; background-size: contain; background-position:center;"></div>
 </div>
 
+Then we propose some phrases and we ask about what is the first they think:
+
 <div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
       <div style="background-image: url('../img/conclusions/2.png'); height:100%; width:80%; background-repeat: no-repeat; background-size: contain; background-position:center;"></div>
 </div>
+
+Finally, bias can be found in 3 phases: in training data, in the algorithm itself and in validation. We have asked students, what is mode critical to deal with when trying to solve the bias issue:
 
 <div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
       <div style="background-image: url('../img/conclusions/3.png'); height:100%; width:80%; background-repeat: no-repeat; background-size: contain; background-position:center;"></div>
