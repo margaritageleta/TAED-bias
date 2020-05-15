@@ -23,8 +23,8 @@ Here are the links, choose the one corresponding to your group:
 
 <div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
     <a href="https://margaritageleta.github.io/TAED-bias/">
-        <div style="background-color: teal; height:80px; width:100px;display: flex; justify-content: center; align-items: center;">
-            <p>Tornar</p>
+        <div style="background-color: teal; height:65px; width:175px;display: flex; justify-content: center; align-items: center; border-radius: 7px;">
+            <p style="margin: 0; color: white;">Tornar</p>
         </div>
     </a>
 </div>
