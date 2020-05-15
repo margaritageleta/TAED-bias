@@ -21,4 +21,11 @@ Here are the links, choose the one corresponding to your group:
 - [AI](https://docs.google.com/forms/d/e/1FAIpQLSdk7DFYOvW9zC0PcKEDpI8kkvS8Rib-A7OUnwrBwhSb4p1ckQ/viewform?usp=sf_link)
 - [Privacitat](https://docs.google.com/forms/d/e/1FAIpQLSf3zr68XF2hQgWbtCTEt94A7D6A-JlnR2ar5HkawS2le7F_uA/viewform?usp=sf_link)
 
+<div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
+    <a href="https://margaritageleta.github.io/TAED-bias/">
+        <div style="background-color: teal; height:80px; width:100px;display: flex; justify-content: center; align-items: center;">
+            <p>Tornar</p>
+        </div>
+    </a>
+</div>
 
