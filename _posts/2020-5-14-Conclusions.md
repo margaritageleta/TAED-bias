@@ -69,7 +69,7 @@ Finally, students had to imagine that they were workers in the Data Science depa
 - **Situation 2**: your work team has managed to find a dataset but it is biased.
 
 ### TAKE-HOME WORK
-In the take-home activity, students were asked to say which of the Datasheets points they think are the more insightful with respect to data. Just a reminder: remember that the Datsheets sections include: (1) Motivation, (2) Composition, (3) Collection Process, (4) Preprocessing, (5) Uses, (6) Distribution Process, (7) Maintenance. 
+In the take-home activity, students were asked to say which of the Datasheets points they think are the more insightful with respect to data. Just a reminder: remember that the Datsheets sections include: (1) Motivation, (2) Composition, (3) Collection Process, (4) Preprocessing, (5) Uses, (6) Distribution Process, (7) Maintenance.
 
 Below we show the results of the poll - 50% of the students showed to believe that the Collection Process is the most informative part regarding data.
 
@@ -91,20 +91,20 @@ Next, we asked students to propose key aspects for each of the above sections. W
 
 #### Key aspects to Collection Process
 
-- **The origin**: where does the data come from? 
+- **The origin**: where does the data come from?
 - **The way it was collected**: (a) Was there consent to collect this kind of data? (b) Is it reliable and trustworthy?
 
 #### Key aspects to Preprocessing
 
 - **Outliers & Missing values**: depending on the preprocessing done, this step can induce bias …
-- **Debiasing techniques**: has there been bias removal during the preprocessing stage? Describe the details needed / known. 
+- **Debiasing techniques**: has there been bias removal during the preprocessing stage? Describe the details needed / known.
 - **Anonymization techniques**: it is key to respect the GDPR.
 - **Feature neglection**: why some features are ignored or deleted?
 
 #### Key aspects to Uses
 
 - **Intended tasks**: in which tasks can this dataset be used?
-- **Actual tasks**: examples of use. Who used it? 
+- **Actual tasks**: examples of use. Who used it?
 - **Licences**: are there any restrictions in use?
 
 #### Key aspects to Distribution Process
@@ -116,7 +116,7 @@ Next, we asked students to propose key aspects for each of the above sections. W
 #### Key aspects to Maintenance
 
 - **Last update**: data evolves in time!
-- **Update periodicity**: will it be updated when it will be needed? 
+- **Update periodicity**: will it be updated when it will be needed?
 - **The way it is updated**: avoid manipulation and bias.
 - **The responsible**: contact & transparency.
 - **Contributions**: who can contribute?
@@ -124,7 +124,7 @@ Next, we asked students to propose key aspects for each of the above sections. W
 <div style="width: 100%; height:200px; display:flex; justify-content: center; align-items: center; margin-top: 15px; margin-bottom: 15px;">  
     <a href="https://margaritageleta.github.io/TAED-bias/">
         <div style="background-color: teal; height:65px; width:175px;display: flex; justify-content: center; align-items: center; border-radius: 7px;">
-            <p style="margin: 0; color: white;">Tornar</p>
+            <p style="margin: 0; color: white;">HOME</p>
         </div>
     </a>
 </div>
