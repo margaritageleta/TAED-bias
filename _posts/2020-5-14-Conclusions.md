@@ -3,7 +3,7 @@ layout: post
 title: "Conclusions"
 description: "In this section we explain the conclusions we extracted from the activities we had organized in the Algorithmic Research Session. "
 permalink: /phase5/
-image: img/pattern.jpg
+image: img/pattern1.jpg
 ---
 
 ### Quiz:
